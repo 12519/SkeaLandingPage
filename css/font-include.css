@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'CorisandeRegular';
+    src: url('../fonts/CorisandeRegular.eot');
+    src: url('../fonts/CorisandeRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/CorisandeRegular.woff2') format('woff2'), url('../fonts/CorisandeRegular.woff') format('woff'), url('../fonts/CorisandeRegular.ttf') format('truetype'), url('../fonts/CorisandeRegular.svg#CorisandeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CorisandeBold';
+    src: url('../fonts/CorisandeBold.eot');
+    src: url('../fonts/CorisandeBold.eot?#iefix') format('embedded-opentype'), url('../fonts/CorisandeBold.woff2') format('woff2'), url('../fonts/CorisandeBold.woff') format('woff'), url('../fonts/CorisandeBold.ttf') format('truetype'), url('../fonts/CorisandeBold.svg#CorisandeBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CorisandeLight';
+    src: url('../fonts/CorisandeLight.eot');
+    src: url('../fonts/CorisandeLight.eot?#iefix') format('embedded-opentype'), url('../fonts/CorisandeLight.woff2') format('woff2'), url('../fonts/CorisandeLight.woff') format('woff'), url('../fonts/CorisandeLight.ttf') format('truetype'), url('../fonts/CorisandeLight.svg#CorisandeLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>الصفحة المقصودة SKEA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.html" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="Fonts/Cairo-Bold.ttf">
+    <link rel="preconnect" href="Fonts/Cairo-Light.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/award-process.css" rel="stylesheet">
+    <style>
+        body {
+          font-family: 'Cairo'!important;
+         
+                }
+        .timer {
+            text-align: center;
+            background-color: #ccc;
+            width: 40%;
+            padding: 15px 0 15px 0;
+            margin-right: 0px;
+        }
+
+        .call-for-action {
+            text-align: center;
+            background-color: #343d82;
+            width: 40%;
+            padding: 15px 0;
+            color: #ffffff;
+        }
+
+        .timer span {
+            font-family: "Cairo";
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 2rem;
+            text-align: center;
+            color: #1b3f7c;
+        }
+        .border-right{
+    border-right: 3px solid #fff;
+    padding: 0 30px;
+    
+} 
+        .remain-time {
+            align-items: center;
+            display: flex;
+            background-color: #ccc;
+            width: 20%;
+        }
+
+        .img-text {
+            position: absolute;
+            bottom: 120px;
+        }
+
+        .img-form {
+            background-color: #ffffffb0;
+            padding: 15px;
+            border: 3px solid #A4843B;
+            border-radius: 10px;
+            position: fixed;
+            width: 25%;
+            z-index: 2;
+        }
+        .close-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #1c3e7e;
+    float: right;
+    margin-top: -10px;
+    font-weight: bold;
+  }
+        em {
+            font-style: normal !important;
+        }
+
+        .counter-tab {
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .hr {
+            height: 5px !important;
+            color: #A4843B !important;
+            opacity: 1 !important;
+            margin: 0 !important;
+        }
+
+        .btn-glod {
+            background: linear-gradient(to bottom, #a4843b 0%, #cc9900 100%) !important;
+            border: none !important;
+            border-radius: 15px;
+        }
+        .bg-blue{
+    background-color:  #1c3e7e;
+}
+        .text-gold {
+            color: #a4843b;
+        }
+        .text-gray{
+    color:  #58595b;
+}
+.text-blue{
+    color:  #1c3e7e;
+}
+        .bg-gold {
+            background: linear-gradient(to bottom, #a4843b 0%, #cc9900 100%) !important;
+        }
+
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1{
+    
+    background: linear-gradient(to right, #1c3e7e, #1c3e7e) no-repeat;
+    background-size: 5% 4px;
+    background-position: center bottom;
+    line-height: 1.5;
+}
+h3{
+    
+    background: linear-gradient(to right, #ffffff, #feffff) no-repeat;
+    background-size: 5% 4px;
+    background-position: center bottom;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+    <!-- Spinner End -->
+
+
+
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-blue py-5 page-header">
+        <div class="container py-5" style="margin-top: 4.5rem !important;">
+            <div style="display:flex;margin-right: 0!important;">
+                <div class="col-lg-4 col-md-12 wow fadeInUp img-form" data-wow-delay="0.5s">
+                    <!-- <div class="close-icon">&times;</div> -->
+                    <form>
+                        <div class="row g-3">
+                            <h5 class="section-title text-blue px-3">مهتم</h5>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">عنوان الايميل</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-primary btn-glod" type="submit">يُقدِّم</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center img-text">
+                    <h6 class="text-white animated slideInDown">حول عملك مع</h6>
+                    <h2 class="display-7 text-white animated slideInDown">جائزة الشيخ خليفة للتميز</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <hr class="hr">
+
+    <div class="d-flex counter-tab">
+        <div class="call-for-action">
+            <h5 class="text-white">انضم إلينا في السعي وراء التميز والجودة</h5>
+
+            <a id="message" class="blink btn btn-primary btn-glod">قدم الآن</a>
+        </div>
+
+        <div class="remain-time">
+            <div class="text-center" style="margin-left: 7.5rem !important;">
+                <h6>تذكر أن تقوم بالتسجيل</h6>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="container">
+              
+                <div class="row" style="justify-content: left!important;" id="counter">
+                    <div class="col col-lg-2 border-right">
+                        <span><em id="days"></em><br /><em>أيام</em></span>
+
+                    </div>
+                    <div class="col col-lg-2 border-right">
+                        <span><em id="hours"></em><br /><em>ساعات</em></span>
+
+                    </div>
+                    <div class="col col-lg-2 border-right">
+                        <span><em id="minutes"></em></em><br /><em>دقائق</em></span>
+
+                    </div>
+                    <div class="col col-lg-2 border-righ">
+                        <span><em id="seconds"></em></em><br /><em>ثواني</em></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h1 class="mb-4 text-center text-gray">مقدمة</h1>
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="h-100">
+                        <img class="img-fluid w-100 h-100" src="img/intro.png" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to eLEARNING</h1> -->
+                    <p class="mb-4">ساهمت جائزة الشيخ خليفة للتميز (SKEA) على مدار الـ 23 عامًا الماضية في تطوير أداء الشركات والمؤسسات العاملة في دولة الإمارات العربية المتحدة وزيادة إنتاجيتها وربحيتها.
+
+                        ما يؤكد على التأثير الهائل لـ SKEA خلال السنوات الماضية في نشر ثقافة الجودة والتميز في جميع أنحاء الدولة والمنطقة ، هو النمو المطرد في عدد المشاركين كل عام في جميع فئات الجائزة. حتى المقيّمين شهدوا تحسناً ملحوظاً في مستوى أداء المشاركين مما يدفع نحو زيادة قدراتهم التنافسية ودخول الأسواق الإقليمية والدولية بجودة أعلى وتكاليف أقل.
+                        
+                        على مدار السنوات الماضية ، كانت جائزة الشيخ خليفة للتميز حاضرة دائمًا إقليمياً ودولياً ، لما تتمتع به من هيكل إداري ممتاز تمت صياغته وفقًا لأحدث الممارسات العملية وأفضل الممارسات في هذا الصدد ، فضلًا عن نموذج التميز الأكثر اعتمادًا في الاتحاد الأوروبي.
+                        
+                        كل ذلك ساعد في توفير الوسائل والآليات المناسبة لنقل المعرفة ووضع خريطة واضحة لجميع الشركات المشاركة في برامج وأنشطة SKEA.
+                        SKEA ليس إطارًا تنافسيًا ضيقًا تفوز به بعض الشركات وتفقده أخرى ، ولكن على العكس من ذلك ، فإن SKEA هي نهج تطوير كامل يساعد جميع المشاركين على تبني مبادئ التنفيذ الشامل للجودة والتميز في أعمالهم.
+                        
+                        الجائزة الحقيقية التي يربحها جميع المشاركين ، حتى الفائزين ، هي تقارير التغذية الراجعة الفنية والتوصيفية التي تشكل مرآة لجودتهم الحقيقية وتميزهم والتي يمكن للمشاركين أن يروا أنفسهم فيها لتحديد نقاط القوة والعمل على تعزيزها - وكذلك فرصة التحسين لوضع الخطط والبرامج المختلفة التي تسد الفجوات. تساعد التقارير أيضًا في صياغة رؤية ورسالة مستقبلية للشركات بحيث يركز الجميع على إفراز جميع القدرات المتاحة لتحقيق هذه الرؤى.
+                        
+                        قد تكون التنمية البشرية وتأهيل أعداد كبيرة من مديري ومديري الشركات في القطاع الخاص من أهم الإنجازات التي حققتها SKEA على مدار السنوات الماضية من خلال إدراجهم في برامج تدريب سفراء الجودة والتميز أو كمقيمين للجائزة. لدى SKEA الآن المزيد من المقيمين المؤهلين الذين يمكنهم أداء أدوارهم سواء في SKEA أو غيرها من الجوائز المحلية والإقليمية والدولية.
+                        
+                        لا شك أن كل ذلك ساهم بفاعلية في نشر ثقافة الجودة الشاملة والتميز بين جميع شركات القطاعين العام والخاص في الإمارات والمنطقة.
+                        
+                        ومن هنا فإن تكريم كل هذه الإنجازات مرتبط باسم صاحب السمو الشيخ خليفة "عليه السلام" للتأكيد على ما تقدمه القيادة العليا في الدولة من رعاية وتشجيع لمثل هذا النهج المدني.
+                        
+                        نيابة عن غرفة أبوظبي ، يشرفني أن أعبر عن خالص شكري وتقديري لصاحب السمو الشيخ محمد بن زايد آل نهيان رئيس الدولة على دعمه المستمر وتشجيعه ومتابعته لأنشطة سكيا التي مكنتها من تحقيق أهدافها. الأهداف والمساهمة في تطوير أداء شركات القطاع الخاص في أبوظبي ودعم عملية التنمية الشاملة والمستدامة في الإمارات والمنطقة.
+                        &nbsp; &nbsp;  <a class="py-3 px-5 mt-2" href="#">...اقرأ أكثر</a></p></a>
+
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="#">اقرأ أكثر...</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5 service-header">
+        <div class="container" dir="rtl">
+            <h3 class="mb-4 text-center text-white">فوائد المشاركة</h3>
+            <div class="row g-4">
+                <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-right pt-3">
+                        <div class="p-4">
+                            <div class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.62 55.71">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #a4843b;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Asset 11</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1" d="M42.16,27.25a1,1,0,0,0,0-2.07H7a1,1,0,1,0,0,2.07Z" />
+                                            <path class="cls-1"
+                                                d="M49.42,29.14A4.62,4.62,0,0,0,46.59,28a4.07,4.07,0,0,0-3.11,1.18l-5.62,5.57a4.11,4.11,0,0,0-.39-.54,3.65,3.65,0,0,0-2.85-1.28H26.74a16.11,16.11,0,0,1-4.3-.57,10.6,10.6,0,0,0-9.89,2.09A14.48,14.48,0,0,0,10,37.18L8.56,35.81a.94.94,0,0,0-.69-.29h0a1,1,0,0,0-.71.31L.28,43a1,1,0,0,0-.28.71,1,1,0,0,0,.31.7L11.92,55.43a1,1,0,0,0,.69.28,1,1,0,0,0,.71-.31l6.81-7a1,1,0,0,0,.28-.72,1,1,0,0,0-.3-.7l-.6-.58,1.36-.15a22.91,22.91,0,0,1,2.48-.14h12a9,9,0,0,0,4.92-1.27l0,0a6.61,6.61,0,0,0,1.27-1.15l8.08-9.51a3.48,3.48,0,0,0-.22-5M12.59,53.31,2.41,43.62l5.48-5.69L18,47.75ZM48.12,32.9,40,42.41a4.35,4.35,0,0,1-.87.79,7.06,7.06,0,0,1-3.83.95h-12a24.61,24.61,0,0,0-2.71.15l-3,.34-6.24-6.06A12.49,12.49,0,0,1,13.81,36a8.58,8.58,0,0,1,8.1-1.72,18,18,0,0,0,4.83.64h7.88a1.81,1.81,0,0,1,1.8,2A2.15,2.15,0,0,1,36,38.22a1.69,1.69,0,0,1-1.36.57H27.73a1,1,0,0,0,0,2h6.86a3.7,3.7,0,0,0,2.88-1.27A4.12,4.12,0,0,0,38.41,37l6.48-6.42a2.33,2.33,0,0,1,3.18.06,1.5,1.5,0,0,1,0,2.29" />
+                                            <rect class="cls-1" x="11.57" y="21.48" width="2.87" height="4.62" />
+                                            <rect class="cls-1" x="17.39" y="19.34" width="2.87" height="6.75" />
+                                            <rect class="cls-1" x="23.48" y="15.88" width="2.87" height="10.22" />
+                                            <rect class="cls-1" x="29.54" y="12.71" width="2.87" height="13.38" />
+                                            <rect class="cls-1" x="35.83" y="10.23" width="2.87" height="16.4" />
+                                            <polygon class="cls-1"
+                                                points="38.96 0 40.3 2.56 8.91 18.56 9.96 20.61 41.36 4.61 42.63 7.06 44.8 1.46 38.96 0" />
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <!-- <h5 class="mb-3">Skilled Instructors</h5> -->
+                            <p>ردود فعل قيمة وتقارير التقييم للمساعدة في تحسين الأعمال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-right pt-3">
+                        <div class="p-4">
+                            <div class="mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.01 51.54">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #5f5c5d;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Asset 17</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M48.77,35H4.25a.44.44,0,0,1-.44-.43V8.53a.44.44,0,0,1,.44-.43H48.77a.43.43,0,0,1,.43.43V34.61a.43.43,0,0,1-.43.43M4.68,34.17H48.33V9H4.68Z" />
+                                            <path class="cls-1"
+                                                d="M52.57,9H.44A.43.43,0,0,1,0,8.53V4.78a.43.43,0,0,1,.44-.43H52.57a.43.43,0,0,1,.44.43V8.53a.43.43,0,0,1-.44.44M.87,8.1H52.14V5.22H.87Z" />
+                                            <path class="cls-1"
+                                                d="M38.3,31H35.18a.43.43,0,0,1-.44-.43V14.73a.43.43,0,0,1,.44-.43H38.3a.44.44,0,0,1,.44.43V30.61a.44.44,0,0,1-.44.43m-2.69-.87h2.26v-15H35.61Z" />
+                                            <path class="cls-1"
+                                                d="M40.43,33H12.59a.44.44,0,0,1-.44-.44.44.44,0,0,1,.44-.43H40.43a.43.43,0,0,1,.43.43.44.44,0,0,1-.43.44" />
+                                            <path class="cls-1"
+                                                d="M32,31H28.86a.44.44,0,0,1-.44-.43V16.7a.44.44,0,0,1,.44-.44H32a.44.44,0,0,1,.43.44V30.61A.43.43,0,0,1,32,31m-2.69-.87h2.25v-13H29.3Z" />
+                                            <path class="cls-1"
+                                                d="M26.87,31H23.75a.44.44,0,0,1-.44-.43v-12a.44.44,0,0,1,.44-.43h3.12a.44.44,0,0,1,.44.43v12a.44.44,0,0,1-.44.43m-2.69-.87h2.26V19.05H24.18Z" />
+                                            <path class="cls-1"
+                                                d="M21.76,31H18.63a.44.44,0,0,1-.44-.43V21.28a.44.44,0,0,1,.44-.44h3.13a.44.44,0,0,1,.43.44v9.33a.43.43,0,0,1-.43.43m-2.69-.87h2.25V21.71H19.07Z" />
+                                            <path class="cls-1"
+                                                d="M16.64,31H13.51a.43.43,0,0,1-.43-.43V24.05a.43.43,0,0,1,.43-.43h3.13a.43.43,0,0,1,.43.43v6.56a.43.43,0,0,1-.43.43M14,30.17H16.2V24.49H14Z" />
+                                            <path class="cls-1"
+                                                d="M13.52,21.72a.44.44,0,0,1-.41-.29.45.45,0,0,1,.26-.56c.12,0,11.77-4.28,16.87-10.22a.44.44,0,0,1,.62-.05.43.43,0,0,1,0,.61c-5.25,6.13-16.75,10.31-17.23,10.48a.4.4,0,0,1-.15,0" />
+                                            <path class="cls-1"
+                                                d="M30.51,14a.43.43,0,0,1-.43-.44V11.44h-2a.44.44,0,1,1,0-.87h2.46a.42.42,0,0,1,.31.13A.43.43,0,0,1,31,11v2.59a.44.44,0,0,1-.44.44" />
+                                            <path class="cls-1"
+                                                d="M27,5.22H23.62a.44.44,0,0,1-.44-.44V2.13a2.13,2.13,0,1,1,4.26,0V4.78a.44.44,0,0,1-.44.44m-2.95-.87h2.51V2.13a1.26,1.26,0,1,0-2.51,0Z" />
+                                            <path class="cls-1"
+                                                d="M47.06,51.54a.44.44,0,0,1-.44-.44v-2a2.84,2.84,0,0,0-2.83-2.84H39.06a2.84,2.84,0,0,0-2.83,2.84v2a.44.44,0,0,1-.88,0v-2a3.72,3.72,0,0,1,3.71-3.71h4.73a3.72,3.72,0,0,1,3.71,3.71v2a.44.44,0,0,1-.44.44m-15.49,0a.44.44,0,0,1-.44-.44v-2a2.84,2.84,0,0,0-2.84-2.84H23.57a2.84,2.84,0,0,0-2.84,2.84v2a.44.44,0,0,1-.43.44.44.44,0,0,1-.44-.44v-2a3.72,3.72,0,0,1,3.71-3.71h4.72A3.72,3.72,0,0,1,32,49.09v2a.44.44,0,0,1-.43.44m-14.34,0a.44.44,0,0,1-.44-.44v-2A2.84,2.84,0,0,0,14,46.25H9.23a2.84,2.84,0,0,0-2.84,2.84v2a.44.44,0,0,1-.43.44.44.44,0,0,1-.44-.44v-2a3.72,3.72,0,0,1,3.71-3.71H14a3.72,3.72,0,0,1,3.71,3.71v2a.44.44,0,0,1-.43.44m24.11-6.72a3.51,3.51,0,1,1,3.51-3.5,3.5,3.5,0,0,1-3.51,3.5m-2.62-3.28A2.63,2.63,0,0,0,44,41.32c0-.1,0-.2,0-.3a3.44,3.44,0,0,1-2.15-.52,3.48,3.48,0,0,1-3.09,1m.07-.87a2.64,2.64,0,0,0,2.6-1,.39.39,0,0,1,.29-.17.39.39,0,0,1,.33.09,2.67,2.67,0,0,0,1.7.58,2.63,2.63,0,0,0-4.92.51M25.85,44.82a3.51,3.51,0,1,1,3.37-4.45l0,.08v0a3.41,3.41,0,0,1,.11.85,3.51,3.51,0,0,1-3.51,3.5m-2.63-3.28a2.63,2.63,0,0,0,5.26-.22c0-.1,0-.2,0-.3a3.45,3.45,0,0,1-2.15-.52,3.51,3.51,0,0,1-3.1,1m.07-.87a2.65,2.65,0,0,0,2.61-1,.44.44,0,0,1,.62-.08,2.63,2.63,0,0,0,1.7.58,2.64,2.64,0,0,0-4.93.51M11.51,44.82A3.51,3.51,0,1,1,15,41.32a3.51,3.51,0,0,1-3.51,3.5M8.88,41.54a2.63,2.63,0,0,0,5.26-.22c0-.1,0-.2,0-.3A3.44,3.44,0,0,1,12,40.5a3.48,3.48,0,0,1-3.1,1M9,40.67a2.62,2.62,0,0,0,2.6-1,.4.4,0,0,1,.3-.17.38.38,0,0,1,.32.09,2.7,2.7,0,0,0,1.71.58A2.64,2.64,0,0,0,9,40.67" />
+                                        </g>
+                                    </g>
+                                </svg> </div>
+                            <!-- <h5 class="mb-3">Online Classes</h5> -->
+                            <p>تنمية المهارات الإدارية والقيادية من خلال التدريب وفرص التواصل</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-right pt-3">
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.85 43.85">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #5f5c5d;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Asset 18</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M30.88,41.93A21.92,21.92,0,1,1,41.93,13a22,22,0,0,1-11,29M13.37,2.81A20.94,20.94,0,1,0,41,13.37,21,21,0,0,0,13.37,2.81" />
+                                            <path class="cls-1"
+                                                d="M30.88,41.93c-4.32,1.94-11.64-5.34-16.66-16.56S8.65,3.85,13,1.91,24.6,7.25,29.63,18.47,35.2,40,30.88,41.93M13.37,2.81C9.68,4.46,10.48,14.61,15.12,25S26.79,42.68,30.48,41s2.88-11.8-1.75-22.15S17.06,1.16,13.37,2.81" />
+                                            <path class="cls-1"
+                                                d="M42.45,29.09a.59.59,0,0,1-.23,0C37.7,28.83,32,30,26.64,32.45s-10.08,5.84-12.86,9.41a.51.51,0,0,1-.59.15,21.83,21.83,0,0,1-12.06-27,.49.49,0,0,1,.5-.33c4.51.3,10.19-.91,15.58-3.33S27.29,5.55,30.07,2a.48.48,0,0,1,.58-.15,21.83,21.83,0,0,1,12.07,27,.53.53,0,0,1-.27.3M2,15.72A20.83,20.83,0,0,0,13.24,41a36,36,0,0,1,13-9.4A36,36,0,0,1,41.9,28.12,20.85,20.85,0,0,0,30.6,2.9a35.91,35.91,0,0,1-13,9.4A36,36,0,0,1,2,15.72" />
+                                            <path class="cls-1"
+                                                d="M41.68,13.62,2.56,31.13a.49.49,0,1,1-.4-.9L41.28,12.72a.5.5,0,0,1,.65.24.5.5,0,0,1-.25.66" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- <h5 class="mb-3">Home Projects</h5> -->
+                            <p>فرصة للمقارنة بين الشركات الأخرى ذات الأداء العالي في المنطقة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-right pt-3">
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.28 41.26">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #5f5c5d;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Asset 19</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M26.84,0A14.34,14.34,0,0,0,19,2.36L15.76.53A1.38,1.38,0,0,0,13.89,1l-1,1.78a9.83,9.83,0,0,0-2.3,0L9.53,1A1.33,1.33,0,0,0,8.7.4a1.37,1.37,0,0,0-1,.13L4.08,2.6a1.37,1.37,0,0,0-.5,1.88l1,1.78a8.59,8.59,0,0,0-1.15,2H1.4A1.38,1.38,0,0,0,0,9.63v4.13A1.38,1.38,0,0,0,1.4,15.13H3.46a8.59,8.59,0,0,0,1.15,2l-1,1.78a1.38,1.38,0,0,0,.5,1.89l3.58,2.06a1.35,1.35,0,0,0,1,.13,1.33,1.33,0,0,0,.83-.64l1-1.78a9.83,9.83,0,0,0,2.3,0l.74,1.27-.84.84a2,2,0,0,0-.4,2.34l-2.13,2.13a2.09,2.09,0,0,0-2.33.39L.6,34.82a2.08,2.08,0,0,0,0,2.92l2.92,2.92a2.08,2.08,0,0,0,2.92,0l7.29-7.3a2,2,0,0,0,.4-2.34l2.12-2.12A2.06,2.06,0,0,0,17.9,29v.61A1.39,1.39,0,0,0,19.28,31h2.06a8.59,8.59,0,0,0,1.15,2l-1,1.78a1.35,1.35,0,0,0-.14,1,1.33,1.33,0,0,0,.64.84l3.58,2.07a1.4,1.4,0,0,0,1,.13,1.33,1.33,0,0,0,.83-.64l1-1.79a8.85,8.85,0,0,0,2.3,0l1,1.78a1.35,1.35,0,0,0,.83.65,1.42,1.42,0,0,0,1-.13l3.57-2.07a1.35,1.35,0,0,0,.5-1.88l-1-1.78a8.59,8.59,0,0,0,1.15-2h2.07a1.39,1.39,0,0,0,1.37-1.38V25.44a1.38,1.38,0,0,0-1.37-1.37H37.84l-.09-.19A14.42,14.42,0,0,0,26.84,0M39.91,14.44a13.06,13.06,0,0,1-6.13,11l-.05,0a12.69,12.69,0,0,1-8.66,1.85.65.65,0,0,0-.33-.06h0a13.06,13.06,0,1,1,15.2-12.88M33.72,27.51a4.12,4.12,0,0,1-8,1.31c.38,0,.76.06,1.15.06a14.25,14.25,0,0,0,6.85-1.73c0,.12,0,.24,0,.36M12.4,14.44c0,.44,0,.87.07,1.3a4.12,4.12,0,1,1-.76-8.18,4,4,0,0,1,2.14.62,14.3,14.3,0,0,0-1.45,6.26m-2.08,4.69a.7.7,0,0,0-.72.33l-1.26,2.2L4.77,19.59,6,17.4A.7.7,0,0,0,6,16.61a7.62,7.62,0,0,1-1.38-2.39.67.67,0,0,0-.65-.46H1.4V9.63H3.93a.68.68,0,0,0,.65-.46A7.66,7.66,0,0,1,6,6.77.7.7,0,0,0,6,6L4.76,3.79,8.34,1.72,9.6,3.92a.69.69,0,0,0,.72.33,7.64,7.64,0,0,1,2.78,0,.68.68,0,0,0,.72-.33l1.26-2.2,2.65,1.53A14.45,14.45,0,0,0,14.51,7a5.41,5.41,0,0,0-2.8-.77,5.5,5.5,0,1,0,.95,10.92,13.06,13.06,0,0,0,.53,2H13.1a7.64,7.64,0,0,1-2.78,0ZM15.19,28,13.25,30l-1-1-1-1,1.95-1.94,0,0ZM5.47,39.68a.69.69,0,0,1-1,0L1.58,36.77a.71.71,0,0,1-.21-.49.67.67,0,0,1,.21-.48l1-1,3.89,3.89Zm7.29-7.29L7.41,37.74,3.52,33.85,8.87,28.5a.7.7,0,0,1,1,0l2.92,2.92a.68.68,0,0,1,0,1m3.9-4.85h0l-2.39-2.39-.53-.53a.68.68,0,0,1,0-1l1.14-1.13a14.5,14.5,0,0,0,3.88,3.89l-1.13,1.13a.68.68,0,0,1-1,0m23.25-2.1v4.13H37.37a.68.68,0,0,0-.65.46,7.32,7.32,0,0,1-1.38,2.39.69.69,0,0,0-.07.8l1.27,2.19L33,37.47,31.7,35.28A.68.68,0,0,0,31,35a8.11,8.11,0,0,1-2.78,0,.69.69,0,0,0-.72.33l-1.26,2.19-3.57-2.06,1.26-2.19a.69.69,0,0,0-.07-.8A7.32,7.32,0,0,1,22.46,30a.68.68,0,0,0-.65-.46H19.28V27.82l.68-.68a14.53,14.53,0,0,0,4.25,1.49A5.49,5.49,0,1,0,35,26.37,14.79,14.79,0,0,0,36.71,25v0a.69.69,0,0,0,.65.45Z" />
+                                            <path class="cls-1"
+                                                d="M15.29,12.82v0a11.66,11.66,0,0,0,3.31,9.8c.14.14.3.27.45.41h0a11.68,11.68,0,1,0,15-17.86L34,5.16a11.65,11.65,0,0,0-18.7,7.65ZM25.74,24.64a5.83,5.83,0,0,1,7.39-2.06,10.3,10.3,0,0,1-7.39,2.06m8.5-3a7.24,7.24,0,0,0-10,2.77,10.24,10.24,0,0,1-3.8-1.87A11.41,11.41,0,0,1,21.57,21a.71.71,0,0,0,.08-.8l-2-3.39a.39.39,0,0,1,0-.28.38.38,0,0,1,.18-.23l5.52-3.18a.31.31,0,0,1,.28,0,.37.37,0,0,1,.22.17l1.95,3.39a.69.69,0,0,0,.72.33A12.73,12.73,0,0,1,33,17a.66.66,0,0,0,.71-.33l2-3.39a.3.3,0,0,1,.22-.17.34.34,0,0,1,.28,0l1,.58a10.32,10.32,0,0,1-2.9,7.91M36.87,12l-.06,0a1.75,1.75,0,0,0-2.38.64l-1.71,3a13.83,13.83,0,0,0-4,0l-1.71-3A1.71,1.71,0,0,0,26,11.75a1.76,1.76,0,0,0-1.33.17l-5.52,3.19a1.77,1.77,0,0,0-.82,1.07,1.75,1.75,0,0,0,.18,1.32l1.71,3c-.27.35-.52.71-.76,1.08a10.21,10.21,0,0,1-2.87-7.65l1.13.32a1.61,1.61,0,0,0,.44.06A1.74,1.74,0,0,0,19.83,13l.86-3.33a14.29,14.29,0,0,0,1.95-.38,13.89,13.89,0,0,0,1.87-.67L27,11a1.77,1.77,0,0,0,2.48,0l4.26-4.33.47.42A10.27,10.27,0,0,1,36.87,12M19.57,7.1a10.33,10.33,0,0,1,13-1.27L28.45,10a.4.4,0,0,1-.26.12.39.39,0,0,1-.27-.11L25.14,7.29a.68.68,0,0,0-.79-.13,12.35,12.35,0,0,1-2.08.78,12.31,12.31,0,0,1-2.18.4.69.69,0,0,0-.61.51l-1,3.79a.34.34,0,0,1-.17.22.34.34,0,0,1-.26.05l-1.34-.39A10.24,10.24,0,0,1,19.57,7.1" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div> <!-- <h5 class="mb-3">Book Library</h5> -->
+                            <p>الوصول إلى أسواق وعملاء جدد من خلال زيادة المصداقية والسمعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-right pt-3">
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.75 47.62">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #5f5c5d;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>Asset 21</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <path class="cls-1"
+                                                d="M51.69,15.18c0-.34-.09-.69-.13-1a1,1,0,0,0-1-1h-.18a7.66,7.66,0,0,0-3.64,1.52L46.4,15l-.92.68-.41-2.31L45,13l.24-.2,0,0a.94.94,0,0,1,.25-.19,6,6,0,0,0,3-3.75,6.53,6.53,0,0,0-.6-4.8A22.87,22.87,0,0,0,45.71.81c-.13-.16-.26-.32-.38-.49A.79.79,0,0,0,44.69,0a1.25,1.25,0,0,0-.8.35A7.93,7.93,0,0,0,41.5,4.78,8.93,8.93,0,0,0,42,10.26a17.48,17.48,0,0,1-6.45,21.6,5.22,5.22,0,0,0-.68.6l-.43.42a1.19,1.19,0,0,1-.73.35H26.91V25.48l1.54.79,1.83.94.51.27L33,28.64a1.3,1.3,0,0,0,.59.17,1,1,0,0,0,.57-.21,1,1,0,0,0,.37-1.07c-.18-1-.35-2.07-.52-3.11-.22-1.35-.45-2.74-.68-4.11a1.28,1.28,0,0,1,.4-1.25L36.92,16l2-2a1,1,0,0,0,.4-1,1,1,0,0,0-.88-.85c-2.92-.46-5.16-.8-7.28-1.1a1.26,1.26,0,0,1-1.06-.81c-.54-1.2-1.08-2.41-1.63-3.61S27.4,4.23,26.86,3A1,1,0,0,0,26,2.28h-.13c-.28,0-.64.08-.93.71l-.28.61c-1,2.12-2,4.31-2.91,6.47a1.58,1.58,0,0,1-1.36,1c-1.65.22-3.32.48-4.94.72l-1.73.27-.11,0-.21,0a1,1,0,0,0-.91.71c-.1.3-.13.65.38,1.15L15,16.07,18,19a1.38,1.38,0,0,1,.43,1.34c-.26,1.51-.51,3-.75,4.53l-.45,2.69a1,1,0,0,0,.95,1.23,1.27,1.27,0,0,0,.54-.14L21.81,27l1.67-.87.36-.17,1-.51v7.68l-.51,0-.13,0h-3l-3,0a1.57,1.57,0,0,1-1-.42c-.27-.21-.53-.43-.77-.65s-.58-.5-.88-.73A17.53,17.53,0,0,1,8.38,16a17.07,17.07,0,0,1,1.37-5.77,9,9,0,0,0-1.1-9A5.38,5.38,0,0,0,7.79.27,1.11,1.11,0,0,0,7.1,0a.81.81,0,0,0-.6.26A14.36,14.36,0,0,0,3.38,5a6.06,6.06,0,0,0,2.78,7.56.94.94,0,0,1,.48,1.14,6.38,6.38,0,0,0-.12.68l-.06.33-.13.8-.69-.42L5,14.69a8.68,8.68,0,0,0-1.3-.75,11.64,11.64,0,0,0-2.38-.73l-.22,0c-.5,0-.84.36-.91,1,0,.35-.09.69-.14,1l0,.41v2.69c.05.18.09.37.14.55a11.58,11.58,0,0,0,.34,1.26,6.28,6.28,0,0,0,6,4.22h.43a1.06,1.06,0,0,1,1.1.78,4.53,4.53,0,0,0,.23.55l.09.21.3.69-.75.07-1,.1c-.79.07-1.53.14-2.28.26a5.16,5.16,0,0,0-1.29.48,1,1,0,0,0-.54.57.76.76,0,0,0,0,.6,14.48,14.48,0,0,0,3.2,4.74A6.49,6.49,0,0,0,10.32,35a5.92,5.92,0,0,0,3.81-1.39l.17-.11.14-.08.51-.32.27.54.09.15a1.26,1.26,0,0,1,.26.7c0,3,0,6,0,8.94v1.44a.8.8,0,0,1,0,.23.51.51,0,0,1,0,.09l-.08.44H13.68a1.31,1.31,0,0,0-.94.33.91.91,0,0,0-.25.67c0,.62.47,1,1.22,1h24.4a1.2,1.2,0,0,0,1-.48,1,1,0,0,0-.83-1.51H36.21l0-.52a1.09,1.09,0,0,1,0-.18c0-.12,0-.23,0-.34V43.3c0-2.85,0-5.79,0-8.69a1.42,1.42,0,0,1,.44-1,.7.7,0,0,1,.43-.14,1.56,1.56,0,0,1,.8.3A6.08,6.08,0,0,0,41.51,35a6.37,6.37,0,0,0,4.26-1.67,14.37,14.37,0,0,0,3.16-4.66,1,1,0,0,0-.57-1.28,7.06,7.06,0,0,0-3.12-.68H43.09l.34-.77.14-.32c.12-.28.24-.57.39-.85a1,1,0,0,1,.79-.46h0l.55,0a5.91,5.91,0,0,0,4.09-1.55,6.79,6.79,0,0,0,2.24-4.37.65.65,0,0,1,.07-.21V15.59ZM6.36,22.24a2.29,2.29,0,0,1-.52.05A3.3,3.3,0,0,1,3.36,21a6.2,6.2,0,0,1-1.29-4.89l.12-.77.69.37A7.13,7.13,0,0,1,6.8,21.65l0,.5ZM7.52,10.32l-.27.49-.48-.26A3.42,3.42,0,0,1,5.06,8,5.81,5.81,0,0,1,6.78,3.17l.54-.55.35.69A7.39,7.39,0,0,1,7.52,10.32Zm4.88,22a3.4,3.4,0,0,1-2.05.67,5.54,5.54,0,0,1-4.72-3.52l-.33-.73.81-.05h.52a7.09,7.09,0,0,1,5.88,2.86l.34.45Zm9.48-7.58-1.42.73-1,.5.33-2c.1-.64.2-1.25.3-1.85.06-.37.12-.74.19-1.11s.17-1,.25-1.54a1,1,0,0,0-.34-1l-2.13-2.11L16.91,15.2l-.35-.33-.26-.24-.81-.77,1.1-.17.68-.11,1.29-.21L21,13l1.06-.16a1.12,1.12,0,0,0,.91-.76l1.57-3.51.5-1.1c.06-.12.12-.25.2-.4l.11-.24.49-1,.5,1,.12.22.19.39.51,1.14c.52,1.13,1.05,2.31,1.56,3.47a1.24,1.24,0,0,0,1.08.83c1.2.16,2.41.35,3.58.53l1.22.18a3.23,3.23,0,0,1,.33.08h0l.94.22-.67.7-1,1.07c-.81.86-1.65,1.74-2.51,2.58a1.53,1.53,0,0,0-.5,1.54c.23,1.18.41,2.35.61,3.58l.24,1.53.17,1-.95-.45-.21-.1-.36-.18-1-.51c-1.06-.54-2.16-1.11-3.23-1.68a1.25,1.25,0,0,0-1.29,0C24.13,23.6,23,24.16,21.88,24.76ZM34.13,45.59H17.62V35.25H34.13ZM44.81,28.7a4.46,4.46,0,0,1,1,.1l.76.17-.48.76a7.55,7.55,0,0,1-2,2.43,4.63,4.63,0,0,1-2.58.84,3.45,3.45,0,0,1-2.09-.66L38.94,32l.33-.45A7.31,7.31,0,0,1,44.81,28.7Zm-.26-17.83-.28-.52a7.07,7.07,0,0,1-.11-7l.37-.66.51.56a5.66,5.66,0,0,1,1.71,4.54,3.83,3.83,0,0,1-1.7,2.78Zm3.72,10.3a3.19,3.19,0,0,1-2.37,1.12,3.4,3.4,0,0,1-.45,0l-.52-.08,0-.52a6.83,6.83,0,0,1,4-5.88l.71-.31.06.77A6.59,6.59,0,0,1,48.27,21.17Z" />
+                                            <path class="cls-1"
+                                                d="M22.86,41.42h6a1.16,1.16,0,0,0,.8-.3,1,1,0,0,0,.29-.71,1,1,0,0,0-1.11-1h-6a1,1,0,0,0-1.11,1,1,1,0,0,0,.27.7A1.13,1.13,0,0,0,22.86,41.42Z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <!-- <h5 class="mb-3">Book Library</h5> -->
+                            <p>التقدير والهيبة للأعمال</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mb-5 text-center text-gray">عملية الجائزة</h1>
+                    <div class="row align-items-center">
+                        <div id="slider" class="col-lg-10 offset-lg-1" dir="rtl">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" dir="rtl">
+
+                                <ul class="carousel-indicators list-inline mx-auto px-2">
+                                    <li class="list-inline-item active">
+                                        <div class="indicators-count">1</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">2</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">3</div>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">4</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">5</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">6</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">7</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">8</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">9</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">10</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">11</div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">12</div>
+                                    </li>&nbsp;&nbsp;
+                                    <li class="list-inline-item">
+                                        <div class="indicators-count">13</div>
+                                    </li>
+                                </ul>
+                                <br /><!-- main slider carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active carousel-item" data-slide-number="1"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar1.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="2"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar2.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="3"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar3.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="4"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar4.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="5"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar5.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="6"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar6.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="7"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar7.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="8"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar8.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="9"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar9.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="10"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar10.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="11"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar11.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="12"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar12.png" alt="" /></div>
+                                    <div class="carousel-item" data-slide-number="13"><img class="img-fluid"
+                                            src="./img/award_process-ae/awdp-ar13.png" alt="" /></div>
+                                    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev"> <span
+                                            class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                                            class="sr-only">Previous</span> </a> <a href="#myCarousel"
+                                        class="carousel-control-next" data-slide="next"> <span
+                                            class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                                            class="sr-only">Next</span> </a>
+                                </div>
+
+                                <!-- main slider carousel nav controls -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h3 class="text-center text-white">Contact Us</h3> 
+            <div class="row g-5">
+                <div class="col-lg-3">
+                    
+                </div>
+                <div class="col-lg-3 col-md-12" style="border-right:1px solid;">
+                    <!-- <h4 class="text-white mb-3">Quick Link</h4> -->
+                    <a class="btn btn-link" href="#">خريطة الموقع</a>
+                    <a class="btn btn-link" href="#">التعليمات</a>
+                    <a class="btn btn-link" href="#">شركاؤنا</a>
+                    <a class="btn btn-link" href="#">اتصل بنا</a>
+                    
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <!-- <h4 class="text-white mb-3">اتصل بنا</h4> -->
+                    <p class="mb-2"><i class="fas fa-inbox me-3"></i>662 أبو ظبي - الإمارات العربية المتحدة
+                    </p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>&nbsp;&nbsp;غرفة أبوظبي ، أبوظبي ، الإمارات العربية المتحدة.
+                    </p>
+                    <p class="mb-2"><i class="fa fa-business-time me-3"></i>من الاثنين إلى الخميس (7:30 صباحًا إلى 3:30 مساءً)
+                    </p>
+                    <p class="mb-2"><i class="fa fa-business-time me-3"></i>الجمعة (7:30 ص حتي 12:00 م)
+                        </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+971 2 6177552/476/464</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@skea.ae</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#"></a>, All Right Reserved.
+
+                        <a class="border-bottom" href=""></a><br><br>
+                        <a class="border-bottom" href=""></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/award-process.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        function countdown() {
+          var now = new Date();
+          var eventDate = new Date("2023-06-30T00:00:00+04:00");
+          var currentTime = now.getTime();
+          var eventTime = eventDate.getTime();
+          var remTime = eventTime - currentTime;
+  
+          var sec = Math.floor(remTime / 1000);
+          var min = Math.floor(sec / 60);
+          var hrs = Math.floor(min / 60);
+          var days = Math.floor(hrs / 24);
+  
+          hrs %= 24;
+          min %= 60;
+          sec %= 60;
+  
+          document.getElementById("days").textContent = days;
+          document.getElementById("hours").textContent = hrs;
+          document.getElementById("minutes").textContent = min;
+          document.getElementById("seconds").textContent = sec;
+  
+          setTimeout(countdown, 1000);
+        }
+  
+        countdown();
+          // form
+          const closeIcon = document.querySelector('.close-icon');
+  const fixedForm = document.querySelector('.img-form');
+
+  closeIcon.addEventListener('click', () => {
+    fixedForm.style.display = 'none';
+  });
+      </script>
+</body>
+
+</html>
