@@ -47,6 +47,7 @@
     left: 0;
     opacity:1!important;
     width:55px;
+    background:#fff;
 }
 
 .carousel-control-next-icon {
@@ -54,6 +55,7 @@
 }
 .carousel-control-next {
     right: 0;
-     opacity:1!important;
-    width:35px;
+    opacity: 1 !important;
+    width: 35px;
+    background: #fff;
 }

@@ -39,20 +39,22 @@
         .carousel-control-prev-icon {
             background-image: url(../img/left-arrow.png);
         }
-        .carousel-control-prev {
-            left: 0!important;
-             opacity:1!important;
-            background-color:#ffffff;
-            width:55px;
-        }
+.carousel-control-prev {
+    left: 0 !important;
+    opacity: 1 !important;
+    background-color: #ffffff;
+    width: 55px;
+    background: #fff;
+}
         
         .carousel-control-next-icon {
             background-image: url(../img/right-arrow.png);
         }
-        .carousel-control-next {
-            right: 0!important;
-             opacity:1!important;
-            background-color:#ffffff;
-            width:35px;
-        }
+.carousel-control-next {
+    right: 0 !important;
+    opacity: 1 !important;
+    background-color: #ffffff;
+    width: 35px;
+    background: #fff;
+}
                 
