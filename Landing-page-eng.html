@@ -55,11 +55,9 @@
     color: #1c3e7e;
    
 }
-.border-right{
-    border-right: 3px solid #fff;
-   
-    
-} 
+        .border-right {
+            border-right: 3px solid #58595b;
+        } 
 .remain-time{
     align-items: center;
     display:flex;
@@ -173,7 +171,7 @@ h1{
                 background: linear-gradient(to bottom, #a4843b 0%, #cc9900 100%) !important;
                 border: none !important;
                 border-radius: 15px;
-                width: auto;
+                width: 120px;
             }
             .mt-frm {
                 margin-top: 0;
@@ -208,7 +206,7 @@ h1{
                 display: block;
                 background-color: #ccc;
                width: auto;
-                font-size: 3.5rem;
+                font-size: 2.5rem;
                 font-weight: 500;
                 line-height: 2rem;
                 text-align: center;
@@ -251,12 +249,41 @@ h1{
                 bottom: 0;
                 top: 80px;
             }
+            .footer-p {
+                font-size: 0.9rem;
+            }
+            .timer span {
+                display: inline-block;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.2rem;
+                text-align: center;
+                color: #1c3e7e;
+            }
+            .em-num {
+                font-size: 1.4rem !important;
+                font-weight: bold !important;
+            }
+            .fixed-form-scrolled {
+                background-color: #ffffff00;
+            }
+            .service-item {
+                background: var(--light);
+                transition: .5s;
+                height: 240px;
+                width: 240px;
+            }
+            .box-center {
+                text-align: -webkit-center;
+            }
         }
         @media (min-width: 992px) {
             .col-lg-2 {
                 flex: 0 0 auto;
                 width: 10.66667%;
+                padding:0px;
             }
+            
         }
     </style>
 </head>
@@ -280,7 +307,7 @@ h1{
             <div style="justify-content: right; display:flex;margin-right: 0!important;">
             <div class="col-lg-4 col-md-12 wow fadeInUp img-form" data-wow-delay="0.5s">
                 <!-- <div class="close-icon">&times;</div> -->
-                <form>
+                <form class="">
                     <div class="row g-3">
                         <h6 class="section-title text-blue">Interested </h6>    
                         <div class="col-md-12">
@@ -382,7 +409,7 @@ h1{
  <div class="container-xxl py-5 service-header">
     <div class="container">
         <h3 class="mb-5 text-center text-white">Benefits of Participating</h3> 
-        <div class="row g-5">
+        <div class="row g-5 box-center">
             <div class="col-lg col-sm wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item  pt-3">
                     <div class="p-4">
@@ -544,12 +571,12 @@ h1{
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <!-- <h4 class="text-white mb-3">Contact</h4> -->
-                    <p class="mb-2"><i class="fas fa-inbox me-3"></i>662 Abu Dhabi - UAE</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>&nbsp;&nbsp;Abu Dhabi Chamber, Abu Dhabi, U.A.E.</p>
-                    <p class="mb-2"><i class="fa fa-business-time me-3"></i>Monday to Thursday (7:30 AM to 3:30 PM)</p>
-                    <p class="mb-2"><i style="margin-right: 2.2rem;"></i>Friday (7:30 AM to 12:00 PM)</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+971 2 6177 552 / 476 / 464</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@skea.ae</p>
+                    <p class="mb-2 footer-p"><i class="fas fa-inbox me-3"></i>662 Abu Dhabi - UAE</p>
+                    <p class="mb-2 footer-p"><i class="fa fa-map-marker-alt me-3"></i>&nbsp;&nbsp;Abu Dhabi Chamber, Abu Dhabi, U.A.E.</p>
+                    <p class="mb-2 footer-p"><i class="fa fa-business-time me-3"></i>Monday to Thursday (7:30 AM to 3:30 PM)</p>
+                    <p class="mb-2 footer-p"><i style="margin-right: 2.2rem;"></i>Friday (7:30 AM to 12:00 PM)</p>
+                    <p class="mb-2 footer-p"><i class="fa fa-phone-alt me-3"></i>+971 2 6177 552 / 476 / 464</p>
+                    <p class="mb-2 footer-p"><i class="fa fa-envelope me-3"></i>info@skea.ae</p>
                     <!-- <div class="d-flex pt-2">
             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -557,6 +584,7 @@ h1{
             <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
         </div> -->
                 </div>
+                <hr />
                 <div class="col-lg-3 col-md-12 d-block d-md-none">
                     <!-- <h4 class="text-white mb-3">Quick Link</h4> -->
                     <a class="btn btn-link" href="https://skea.ae/sitemap" target="_blank">Site Map</a>
@@ -565,7 +593,10 @@ h1{
                     <a class="btn btn-link" href="https://skea.ae/contact-us" target="_blank">Contact Us</a>
 
                 </div>
+                <div class="col-lg-3 d-block d-md-none" style="height: 30vh;">
 
+                </div>
+                
             </div>
         </div>
         <div class="container mt-5">
@@ -640,12 +671,22 @@ h1{
         countdown();
 
         // form
-        const closeIcon = document.querySelector('.close-icon');
-  const fixedForm = document.querySelector('.img-form');
+  //      const closeIcon = document.querySelector('.close-icon');
+  //const fixedForm = document.querySelector('.img-form');
 
-  closeIcon.addEventListener('click', () => {
-    fixedForm.style.display = 'none';
-  });
+  //closeIcon.addEventListener('click', () => {
+  //  fixedForm.style.display = 'none';
+  //});
+
+        //window.addEventListener('scroll', function () {
+        //    var form = document.querySelector('.img-form'); // replace this with the selector for your form element
+        //    var scrollPosition = window.scrollY || window.pageYOffset;
+        //    if (scrollPosition > 100) {
+        //        form.classList.add('fixed-form-scrolled');
+        //    } else {
+        //        form.classList.remove('fixed-form-scrolled');
+        //    }
+        //});
       </script>
 </body>
 </html>
