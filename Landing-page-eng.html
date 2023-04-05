@@ -104,12 +104,14 @@ em{
    font-size: 2rem!important;
    font-weight: bold!important;
 }
-.counter-tab{
-    display:flex;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
+        .counter-tab {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            border-top: 5px solid #a4843b !important;
+            bottom: 0;
+        }
 .hr{
     height: 5px!important;
     color: #a4843b!important;
@@ -277,14 +279,16 @@ h1{
                 text-align: -webkit-center;
             }
         }
+
         @media (min-width: 992px) {
             .col-lg-2 {
                 flex: 0 0 auto;
                 width: 10.66667%;
-                padding:0px;
+                padding: 0px;
             }
-            
         }
+
+       
     </style>
 </head>
 
@@ -333,14 +337,11 @@ h1{
         </div>
     </div>
     <!-- Header End -->
-    <hr class="hr">
-   
+    <!--<hr class="hr">-->
             <div class="counter-tab">
-              
                 <div class="timer">
                     <div class="container">
                         <div class="row"  id="counter" style="justify-content: right!important;">
-
                             <div class="col col-lg-2 border-right">
                                 <span><em id="days" class="em-num"></em><br /><em>DAYS</em></span>
 
@@ -377,7 +378,7 @@ h1{
             </div>
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-fluid py-5">
         <div class="container">
             <h1 class="mb-4 text-center text-gray">Introduction</h1> 
             <div class="row g-5">
@@ -406,7 +407,7 @@ h1{
     <!-- About End -->
 
  <!-- Service Start -->
- <div class="container-xxl py-5 service-header">
+ <div class="container-fluid py-5 service-header">
     <div class="container">
         <h3 class="mb-5 text-center text-white">Benefits of Participating</h3> 
         <div class="row g-5 box-center">
